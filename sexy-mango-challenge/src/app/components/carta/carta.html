@@ -1,0 +1,22 @@
+@if (carta()) {
+  <div class="carta-escena">
+    <div class="carta-contenedor" [class.revelada]="revelada()">
+      <div class="carta-lado carta-frente">
+        <img src="img/Cartas.png" alt="Reverso de carta" class="carta-imagen" />
+      </div>
+      <div class="carta-lado carta-trasera" [class]="'tipo-' + carta()!.categoria">
+        <div class="tipo-badge">
+          @if (carta()!.categoria === 'verdad') {
+            <span>❓ Verdad</span>
+          } @else {
+            <span>⚡ Reto</span>
+          }
+        </div>
+        <p class="carta-texto">{{ carta()!.texto }}</p>
+        <div class="intensidad-badge" [class]="'intensidad-' + carta()!.intensidad">
+          {{ carta()!.intensidad }}
+        </div>
+      </div>
+    </div>
+  </div>
+}

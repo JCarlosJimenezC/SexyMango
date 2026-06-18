@@ -1,0 +1,35 @@
+<div class="pantalla-inicio">
+  <app-encabezado />
+
+  <main class="contenido">
+    <div class="hero">
+      <img src="img/Logo-sexymango.png" alt="Sexy Mango" class="logo-grande" />
+      <h2 class="subtitulo">¿Verdad o Reto?</h2>
+      <p class="descripcion">
+        El juego de cartas que hace los eventos más divertidos.<br />
+        Elige tu nivel y que empiece el caos 🥭
+      </p>
+    </div>
+
+    <section class="seccion">
+      <h3 class="seccion-titulo">Nivel de intensidad</h3>
+      <app-selector-intensidad />
+    </section>
+
+    <button
+      class="btn-comenzar"
+      (click)="juego.comenzar()"
+      [disabled]="juego.cargando()"
+    >
+      @if (juego.cargando()) {
+        <span>Cargando...</span>
+      } @else {
+        <span>🎴 Comenzar</span>
+      }
+    </button>
+  </main>
+
+  <footer class="footer">
+    <p>Sexy Mango Challenge &copy; 2026</p>
+  </footer>
+</div>

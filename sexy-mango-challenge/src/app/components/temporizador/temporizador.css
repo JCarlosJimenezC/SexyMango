@@ -1,0 +1,50 @@
+.temporizador {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.anillo {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+}
+
+.fondo {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 7;
+}
+
+.progreso {
+  fill: none;
+  stroke: var(--color-primario);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-dasharray: 276.5;
+  transition: stroke-dashoffset 0.95s linear, stroke 0.3s;
+}
+
+.urgente .progreso {
+  stroke: var(--color-secundario);
+}
+
+.urgente {
+  animation: pulso 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulso {
+  to { transform: scale(1.08); }
+}
+
+.numero {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-texto);
+  position: relative;
+  z-index: 1;
+}

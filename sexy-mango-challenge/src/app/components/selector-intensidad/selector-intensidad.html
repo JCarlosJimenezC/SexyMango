@@ -1,0 +1,12 @@
+<div class="selector">
+  @for (nivel of niveles; track nivel.id) {
+    <button
+      class="btn-nivel"
+      [class.activo]="juego.intensidad() === nivel.id"
+      (click)="juego.cambiarIntensidad(nivel.id)"
+    >
+      <span class="emoji">{{ nivel.emoji }}</span>
+      <span>{{ nivel.label }}</span>
+    </button>
+  }
+</div>

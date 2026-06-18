@@ -1,0 +1,40 @@
+<div class="pantalla-juego">
+  <app-encabezado />
+
+  <div class="barra-info">
+    <span class="contador">Carta #{{ juego.totalJugadas() }}</span>
+    @if (juego.temporizadorActivo()) {
+      <app-temporizador
+        [resetKey]="timerKey()"
+        [duracion]="20"
+        [activo]="true"
+        (agotado)="onTimerAgotado()"
+      />
+    }
+    <button
+      class="btn-timer"
+      (click)="juego.toggleTemporizador()"
+      [title]="juego.temporizadorActivo() ? 'Desactivar temporizador' : 'Activar temporizador'"
+    >
+      {{ juego.temporizadorActivo() ? '⏱️' : '⏸️' }}
+    </button>
+  </div>
+
+  <main class="contenido">
+    <app-carta [carta]="juego.cartaActual()" />
+  </main>
+
+  <div class="acciones">
+    <button class="btn-accion btn-paso" (click)="onPaso()">
+      ✋ Paso
+    </button>
+    <button class="btn-accion btn-siguiente" (click)="onSiguiente()">
+      🎴 Siguiente
+    </button>
+    <button class="btn-accion btn-cumplido" (click)="onCumplido()">
+      ✅ Cumplido
+    </button>
+  </div>
+
+  <button class="btn-salir" (click)="juego.reiniciar()">↩ Salir del juego</button>
+</div>

@@ -1,0 +1,38 @@
+.selector {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-nivel {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-texto);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-nivel:hover {
+  border-color: var(--color-primario);
+  background: rgba(255, 123, 0, 0.12);
+}
+
+.btn-nivel.activo {
+  border-color: var(--color-primario);
+  background: var(--color-primario);
+  color: #0d0d0d;
+  box-shadow: 0 0 18px rgba(255, 123, 0, 0.5);
+}
+
+.emoji {
+  font-size: 1.15rem;
+}

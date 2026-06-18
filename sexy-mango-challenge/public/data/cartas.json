@@ -1,0 +1,186 @@
+{
+  "verdades": [
+    {
+      "id": "v01",
+      "categoria": "verdad",
+      "intensidad": "suave",
+      "texto": "¿Cuál fue tu primera impresión de alguien en este grupo?"
+    },
+    {
+      "id": "v02",
+      "categoria": "verdad",
+      "intensidad": "suave",
+      "texto": "¿Cuál es tu mayor vergüenza de la secundaria?"
+    },
+    {
+      "id": "v03",
+      "categoria": "verdad",
+      "intensidad": "suave",
+      "texto": "¿A quién del grupo le mandarías un mango de regalo y por qué?"
+    },
+    {
+      "id": "v04",
+      "categoria": "verdad",
+      "intensidad": "suave",
+      "texto": "¿Cuál es tu mentira blanca favorita para salir de un plan?"
+    },
+    {
+      "id": "v05",
+      "categoria": "verdad",
+      "intensidad": "suave",
+      "texto": "¿Cuál fue la última vez que hiciste algo que te dio pena?"
+    },
+    {
+      "id": "v06",
+      "categoria": "verdad",
+      "intensidad": "suave",
+      "texto": "¿Qué talento secreto tienes que nadie del grupo sabe?"
+    },
+    {
+      "id": "v07",
+      "categoria": "verdad",
+      "intensidad": "picante",
+      "texto": "¿Cuál fue el texto más incómodo que enviaste por error a la persona equivocada?"
+    },
+    {
+      "id": "v08",
+      "categoria": "verdad",
+      "intensidad": "picante",
+      "texto": "¿Cuándo fue la última vez que fingiste estar ocupado para no ver a alguien del grupo?"
+    },
+    {
+      "id": "v09",
+      "categoria": "verdad",
+      "intensidad": "picante",
+      "texto": "¿Qué harías si encontraras el celular de alguien del grupo desbloqueado?"
+    },
+    {
+      "id": "v10",
+      "categoria": "verdad",
+      "intensidad": "picante",
+      "texto": "¿Tienes conversaciones que borrarías si alguien te revisara el celular ahora mismo?"
+    },
+    {
+      "id": "v11",
+      "categoria": "verdad",
+      "intensidad": "picante",
+      "texto": "¿Cuál es la historia más vergonzosa que no has contado esta noche?"
+    },
+    {
+      "id": "v12",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿A quién de los presentes le darías un beso sin que nadie lo supiera?"
+    },
+    {
+      "id": "v13",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿Has hablado mal de alguien del grupo con otra persona del mismo grupo?"
+    },
+    {
+      "id": "v14",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿Cuál es el secreto más grande que le guardas a alguien en este cuarto?"
+    },
+    {
+      "id": "v15",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿Cuándo fue la última vez que lloraste y por qué no lo has contado al grupo?"
+    }
+  ],
+  "retos": [
+    {
+      "id": "r01",
+      "categoria": "reto",
+      "intensidad": "suave",
+      "texto": "Cuenta hasta 3 y todos brindan con su shot de mango. ¡Salud!"
+    },
+    {
+      "id": "r02",
+      "categoria": "reto",
+      "intensidad": "suave",
+      "texto": "Haz tu mejor imitación de la persona a tu izquierda sin hablar."
+    },
+    {
+      "id": "r03",
+      "categoria": "reto",
+      "intensidad": "suave",
+      "texto": "Di tres cosas genuinas que admiras de la persona a tu derecha."
+    },
+    {
+      "id": "r04",
+      "categoria": "reto",
+      "intensidad": "suave",
+      "texto": "Canta el coro de la última canción que escuchaste o toma un shot."
+    },
+    {
+      "id": "r05",
+      "categoria": "reto",
+      "intensidad": "suave",
+      "texto": "Nombra 5 frutas tropicales en 10 segundos o toma un shot de mango."
+    },
+    {
+      "id": "r06",
+      "categoria": "reto",
+      "intensidad": "suave",
+      "texto": "Tómate una selfie con la expresión más dramática que puedas y muéstrasela al grupo."
+    },
+    {
+      "id": "r07",
+      "categoria": "reto",
+      "intensidad": "picante",
+      "texto": "Toma un shot si en el último mes le mentiste a alguien del grupo."
+    },
+    {
+      "id": "r08",
+      "categoria": "reto",
+      "intensidad": "picante",
+      "texto": "Llama a alguien de tus contactos al azar y dile: 'Sexy Mango te saluda'. Si cuelgan, toma un shot."
+    },
+    {
+      "id": "r09",
+      "categoria": "reto",
+      "intensidad": "picante",
+      "texto": "Escribe un mensaje cariñoso al último contacto con quien hablaste. Muéstralo antes de enviarlo. El grupo decide si lo mandas."
+    },
+    {
+      "id": "r10",
+      "categoria": "reto",
+      "intensidad": "picante",
+      "texto": "Baila solo 30 segundos con la canción que ponga el grupo. Sin parar."
+    },
+    {
+      "id": "r11",
+      "categoria": "reto",
+      "intensidad": "picante",
+      "texto": "Deja que la persona a tu izquierda lea tu último estado de WhatsApp en voz alta."
+    },
+    {
+      "id": "r12",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "Pon en altavoz el último audio de voz que recibiste y reprodúcelo para el grupo."
+    },
+    {
+      "id": "r13",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "Llama a alguien de tu historial reciente y di 'extrañaba escuchar tu voz'. El grupo escucha."
+    },
+    {
+      "id": "r14",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "Haz tu mejor cara de seducción y mantén contacto visual con alguien del grupo por 15 segundos. Sin reírse."
+    },
+    {
+      "id": "r15",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "Todos votan: ¿quién del grupo ganaría un concurso de coquetería? Esa persona toma un shot doble."
+    }
+  ]
+}

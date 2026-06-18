@@ -1,0 +1,33 @@
+<div class="pantalla-resumen">
+  <app-encabezado />
+
+  <main class="contenido">
+    <div class="trofeo">🥭</div>
+    <h2 class="titulo">¡Noche completada!</h2>
+    <p class="subtitulo">Eso estuvo bueno...</p>
+
+    <div class="estadisticas">
+      <div class="stat">
+        <span class="stat-numero">{{ juego.totalJugadas() }}</span>
+        <span class="stat-label">Cartas</span>
+      </div>
+      <div class="stat">
+        <span class="stat-numero">{{ juego.verdadesJugadas() }}</span>
+        <span class="stat-label">Verdades</span>
+      </div>
+      <div class="stat">
+        <span class="stat-numero">{{ juego.retosJugados() }}</span>
+        <span class="stat-label">Retos</span>
+      </div>
+    </div>
+
+    <div class="botones">
+      <button class="btn-otra-ronda" (click)="juego.comenzar()">
+        🔄 Otra ronda
+      </button>
+      <button class="btn-reiniciar" (click)="juego.reiniciar()">
+        🏠 Inicio
+      </button>
+    </div>
+  </main>
+</div>

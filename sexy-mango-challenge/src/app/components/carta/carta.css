@@ -1,0 +1,98 @@
+.carta-escena {
+  perspective: 1200px;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.carta-contenedor {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  transform-style: preserve-3d;
+  transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carta-contenedor.revelada {
+  transform: rotateY(180deg);
+}
+
+.carta-lado {
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow:
+    0 10px 50px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.carta-frente {
+  background: #111;
+}
+
+.carta-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carta-trasera {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+}
+
+.carta-trasera.tipo-verdad {
+  background: linear-gradient(150deg, #1a0a3a 0%, #2d1b6b 100%);
+  box-shadow:
+    0 10px 50px rgba(0, 0, 0, 0.7),
+    0 0 0 2px rgba(120, 90, 255, 0.35),
+    inset 0 0 40px rgba(120, 90, 255, 0.08);
+}
+
+.carta-trasera.tipo-reto {
+  background: linear-gradient(150deg, #2e0808 0%, #6b1a1a 100%);
+  box-shadow:
+    0 10px 50px rgba(0, 0, 0, 0.7),
+    0 0 0 2px rgba(214, 40, 40, 0.4),
+    inset 0 0 40px rgba(214, 40, 40, 0.08);
+}
+
+.tipo-badge {
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.tipo-verdad .tipo-badge { color: #b4a0ff; }
+.tipo-reto .tipo-badge { color: #ff6b6b; }
+
+.carta-texto {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-texto);
+  text-align: center;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.intensidad-badge {
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.intensidad-suave  { background: rgba(182, 224, 0, 0.15); color: var(--color-acento); }
+.intensidad-picante { background: rgba(255, 123, 0, 0.15); color: var(--color-primario); }
+.intensidad-extremo { background: rgba(214, 40, 40, 0.15); color: #ff6b6b; }
