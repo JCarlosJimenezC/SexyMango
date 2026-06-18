@@ -4,91 +4,121 @@
       "id": "v01",
       "categoria": "verdad",
       "intensidad": "suave",
-      "texto": "¿Cuál fue tu primera impresión de alguien en este grupo?"
+      "texto": "¿Cuál es la parte del cuerpo que más te gusta de ti mismo/a? Muéstrala."
     },
     {
       "id": "v02",
       "categoria": "verdad",
       "intensidad": "suave",
-      "texto": "¿Cuál es tu mayor vergüenza de la secundaria?"
+      "texto": "¿A quién del grupo le daría un shot en el cuerpo si pudiera? ¿En dónde?"
     },
     {
       "id": "v03",
       "categoria": "verdad",
       "intensidad": "suave",
-      "texto": "¿A quién del grupo le mandarías un mango de regalo y por qué?"
+      "texto": "¿Cuál fue el lugar más raro donde te han dado un beso?"
     },
     {
       "id": "v04",
       "categoria": "verdad",
       "intensidad": "suave",
-      "texto": "¿Cuál es tu mentira blanca favorita para salir de un plan?"
+      "texto": "¿Eres más de dar o de recibir? En todos los sentidos."
     },
     {
       "id": "v05",
       "categoria": "verdad",
       "intensidad": "suave",
-      "texto": "¿Cuál fue la última vez que hiciste algo que te dio pena?"
+      "texto": "¿Cuántos tragos necesitas para perder la pena? ¿Cuántos llevas esta noche?"
     },
     {
       "id": "v06",
       "categoria": "verdad",
       "intensidad": "suave",
-      "texto": "¿Qué talento secreto tienes que nadie del grupo sabe?"
+      "texto": "¿A quién del grupo le mandarías un mensaje de 'buenas noches' con doble intención?"
     },
     {
       "id": "v07",
       "categoria": "verdad",
-      "intensidad": "picante",
-      "texto": "¿Cuál fue el texto más incómodo que enviaste por error a la persona equivocada?"
+      "intensidad": "suave",
+      "texto": "¿Cuál es tu tipo y alguien del grupo se acerca? Sé honesto/a."
     },
     {
       "id": "v08",
       "categoria": "verdad",
       "intensidad": "picante",
-      "texto": "¿Cuándo fue la última vez que fingiste estar ocupado para no ver a alguien del grupo?"
+      "texto": "¿Cuál es tu fantasía más recurrente? Da detalles o toma dos shots."
     },
     {
       "id": "v09",
       "categoria": "verdad",
       "intensidad": "picante",
-      "texto": "¿Qué harías si encontraras el celular de alguien del grupo desbloqueado?"
+      "texto": "¿Con cuántas personas del grupo te irías a un cuarto oscuro si nadie se enterara?"
     },
     {
       "id": "v10",
       "categoria": "verdad",
       "intensidad": "picante",
-      "texto": "¿Tienes conversaciones que borrarías si alguien te revisara el celular ahora mismo?"
+      "texto": "¿Cuál es el lugar más atrevido donde lo has hecho? Si nunca, toma un shot doble."
     },
     {
       "id": "v11",
       "categoria": "verdad",
       "intensidad": "picante",
-      "texto": "¿Cuál es la historia más vergonzosa que no has contado esta noche?"
+      "texto": "¿Has tenido pensamientos sucios sobre alguien en este cuarto? Señálala/o o toma tres shots."
     },
     {
       "id": "v12",
       "categoria": "verdad",
-      "intensidad": "extremo",
-      "texto": "¿A quién de los presentes le darías un beso sin que nadie lo supiera?"
+      "intensidad": "picante",
+      "texto": "¿Cuál es la cosa más cachonda que has hecho estando borracho/a?"
     },
     {
       "id": "v13",
       "categoria": "verdad",
-      "intensidad": "extremo",
-      "texto": "¿Has hablado mal de alguien del grupo con otra persona del mismo grupo?"
+      "intensidad": "picante",
+      "texto": "¿Alguna vez mandaste fotos que no deberías? ¿A quién? Solo di el nombre de pila."
     },
     {
       "id": "v14",
       "categoria": "verdad",
-      "intensidad": "extremo",
-      "texto": "¿Cuál es el secreto más grande que le guardas a alguien en este cuarto?"
+      "intensidad": "picante",
+      "texto": "Clasifica a las personas del grupo del 1 al 10 en la cama. En voz alta o toma un shot por cada persona que te saltes."
     },
     {
       "id": "v15",
       "categoria": "verdad",
       "intensidad": "extremo",
-      "texto": "¿Cuándo fue la última vez que lloraste y por qué no lo has contado al grupo?"
+      "texto": "¿Cuál es la posición que más te gusta y por qué? Sin eufemismos."
+    },
+    {
+      "id": "v16",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿Alguna vez lo hiciste con alguien del grupo? Nombra a esa persona o toma cuatro shots."
+    },
+    {
+      "id": "v17",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿Cuál fue el sexting más caliente que has mandado? Léelo o muéstralo. Si no, toma tres shots dobles."
+    },
+    {
+      "id": "v18",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿Cuántas personas has besado en este grupo? Nómbralas. Una shot por cada nombre que omitas."
+    },
+    {
+      "id": "v19",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿Qué parte del cuerpo de alguien en este cuarto te quita el sueño? Dilo en voz alta."
+    },
+    {
+      "id": "v20",
+      "categoria": "verdad",
+      "intensidad": "extremo",
+      "texto": "¿Cuál es el fetiche que nadie del grupo sabe que tienes? Si no confiesas, toma shots hasta que alguien te pare."
     }
   ],
   "retos": [
@@ -96,91 +126,121 @@
       "id": "r01",
       "categoria": "reto",
       "intensidad": "suave",
-      "texto": "Cuenta hasta 3 y todos brindan con su shot de mango. ¡Salud!"
+      "texto": "Todos brindan. El último en chocar su vaso toma un shot extra. ¡Salud!"
     },
     {
       "id": "r02",
       "categoria": "reto",
       "intensidad": "suave",
-      "texto": "Haz tu mejor imitación de la persona a tu izquierda sin hablar."
+      "texto": "Manda un mensaje provocador al último contacto con quien hablaste. El grupo lo dicta, tú lo mandas."
     },
     {
       "id": "r03",
       "categoria": "reto",
       "intensidad": "suave",
-      "texto": "Di tres cosas genuinas que admiras de la persona a tu derecha."
+      "texto": "Susurra algo al oído de la persona a tu derecha que solo ella pueda escuchar. Si se ruboriza, todos toman un shot."
     },
     {
       "id": "r04",
       "categoria": "reto",
       "intensidad": "suave",
-      "texto": "Canta el coro de la última canción que escuchaste o toma un shot."
+      "texto": "Baila de manera seductora por 30 segundos con la canción que ponga el grupo. Sin parar o toma dos shots."
     },
     {
       "id": "r05",
       "categoria": "reto",
       "intensidad": "suave",
-      "texto": "Nombra 5 frutas tropicales en 10 segundos o toma un shot de mango."
+      "texto": "Elige a alguien del grupo y hazle el cumplido más atrevido que se te ocurra."
     },
     {
       "id": "r06",
       "categoria": "reto",
       "intensidad": "suave",
-      "texto": "Tómate una selfie con la expresión más dramática que puedas y muéstrasela al grupo."
+      "texto": "Toma un trago de la bebida de la persona que más te atraiga del grupo. Sin decir por qué."
     },
     {
       "id": "r07",
       "categoria": "reto",
-      "intensidad": "picante",
-      "texto": "Toma un shot si en el último mes le mentiste a alguien del grupo."
+      "intensidad": "suave",
+      "texto": "Haz tu mejor cara de seducción y mantenla mientras el grupo cuenta hasta 10. Si te ríes, shot."
     },
     {
       "id": "r08",
       "categoria": "reto",
       "intensidad": "picante",
-      "texto": "Llama a alguien de tus contactos al azar y dile: 'Sexy Mango te saluda'. Si cuelgan, toma un shot."
+      "texto": "Da un masaje en los hombros a la persona de tu elección por 30 segundos. Si se quejan, son ellos los que toman."
     },
     {
       "id": "r09",
       "categoria": "reto",
       "intensidad": "picante",
-      "texto": "Escribe un mensaje cariñoso al último contacto con quien hablaste. Muéstralo antes de enviarlo. El grupo decide si lo mandas."
+      "texto": "Deja que alguien del grupo te dibuje algo con hielo en la espalda. Adivina qué es o toma un shot."
     },
     {
       "id": "r10",
       "categoria": "reto",
       "intensidad": "picante",
-      "texto": "Baila solo 30 segundos con la canción que ponga el grupo. Sin parar."
+      "texto": "Toma un shot de la parte del cuerpo que elija el grupo. Vaso está de más."
     },
     {
       "id": "r11",
       "categoria": "reto",
       "intensidad": "picante",
-      "texto": "Deja que la persona a tu izquierda lea tu último estado de WhatsApp en voz alta."
+      "texto": "Llama a tu ex ahora mismo. Di 'te extraño'. Cuelga. El grupo escucha. Si no lo haces, toma tres shots."
     },
     {
       "id": "r12",
       "categoria": "reto",
-      "intensidad": "extremo",
-      "texto": "Pon en altavoz el último audio de voz que recibiste y reprodúcelo para el grupo."
+      "intensidad": "picante",
+      "texto": "Elige a alguien del grupo y míralo/a a los ojos sin reírte por 20 segundos. El primero en apartar la mirada toma dos shots."
     },
     {
       "id": "r13",
       "categoria": "reto",
-      "intensidad": "extremo",
-      "texto": "Llama a alguien de tu historial reciente y di 'extrañaba escuchar tu voz'. El grupo escucha."
+      "intensidad": "picante",
+      "texto": "Escribe un mensaje provocador a alguien fuera del grupo. El grupo lo elige, tú lo mandas o tomas cuatro shots."
     },
     {
       "id": "r14",
       "categoria": "reto",
-      "intensidad": "extremo",
-      "texto": "Haz tu mejor cara de seducción y mantén contacto visual con alguien del grupo por 15 segundos. Sin reírse."
+      "intensidad": "picante",
+      "texto": "El grupo vota: ¿quién aquí tiene más sex appeal? Esa persona toma un shot doble... merecido."
     },
     {
       "id": "r15",
       "categoria": "reto",
       "intensidad": "extremo",
-      "texto": "Todos votan: ¿quién del grupo ganaría un concurso de coquetería? Esa persona toma un shot doble."
+      "texto": "Dale un beso en el cuello a la persona que elija el grupo por 5 segundos. Sin excusas o toma un shot por cada segundo que le falte."
+    },
+    {
+      "id": "r16",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "Permite que alguien del grupo te vende los ojos y te dé un beso donde quiera. Si adivinas quién fue, esa persona toma un shot doble."
+    },
+    {
+      "id": "r17",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "Hazle un lap dance a la persona que el grupo elija por 30 segundos. Si te niegas, toma cinco shots seguidos."
+    },
+    {
+      "id": "r18",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "El grupo tiene 60 segundos para ponerse de acuerdo: ¿qué dos personas del grupo harían mejor pareja en la cama? Esas dos personas toman un shot juntas... y se miran a los ojos."
+    },
+    {
+      "id": "r19",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "Muéstrale al grupo el mensaje más comprometedor de tu celular. Si te niegas, toma un shot por cada ojo que haya en el cuarto."
+    },
+    {
+      "id": "r20",
+      "categoria": "reto",
+      "intensidad": "extremo",
+      "texto": "Elige a alguien del grupo y dile en voz alta, con lujo de detalle, qué le harías si estuvieran solos. Sin bajar el volumen o toma seis shots."
     }
   ]
 }
