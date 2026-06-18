@@ -1,4 +1,4 @@
-import { Component, inject, signal, OnInit, OnDestroy } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Juego } from '../../services/juego';
 import { Audio } from '../../services/audio';
 import { Carta as CartaModel } from '../../models/carta.model';
@@ -12,19 +12,11 @@ import { Encabezado } from '../encabezado/encabezado';
   templateUrl: './pantalla-juego.html',
   styleUrl: './pantalla-juego.css',
 })
-export class PantallaJuego implements OnInit, OnDestroy {
+export class PantallaJuego {
   juego = inject(Juego);
   private audio = inject(Audio);
 
   timerKey = signal(0);
-
-  ngOnInit() {
-    this.audio.startBgMusic();
-  }
-
-  ngOnDestroy() {
-    this.audio.stopBgMusic();
-  }
 
   onSeleccionar(carta: CartaModel) {
     this.juego.seleccionarCarta(carta);

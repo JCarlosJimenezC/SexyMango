@@ -14,13 +14,15 @@ export class Audio {
 
   async startBgMusic() {
     const ctx = this.context;
-    if (ctx.state === 'suspended') await ctx.resume();
     if (!this.bgBuffer) {
       const res = await fetch('audio/sexy-mango.mp3');
       const buf = await res.arrayBuffer();
       this.bgBuffer = await ctx.decodeAudioData(buf);
     }
-    if (this.bgSource) return;
+    if (this.bgSource) {
+      if (ctx.state === 'suspended') await ctx.resume().catch(() => {});
+      return;
+    }
     const src = ctx.createBufferSource();
     src.buffer = this.bgBuffer;
     src.loop = true;
@@ -31,6 +33,14 @@ export class Audio {
     src.start();
     this.bgSource = src;
     this.bgGain = gain;
+    await ctx.resume().catch(() => {});
+    if (ctx.state === 'suspended') this.registrarDesbloqueo();
+  }
+
+  private registrarDesbloqueo() {
+    const desbloquear = () => this.context.resume().catch(() => {});
+    document.addEventListener('touchstart', desbloquear, { once: true });
+    document.addEventListener('click', desbloquear, { once: true });
   }
 
   stopBgMusic() {
