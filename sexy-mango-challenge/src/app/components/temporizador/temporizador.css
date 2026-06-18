@@ -48,3 +48,29 @@
   position: relative;
   z-index: 1;
 }
+
+/* Teléfonos pequeños (< 375px) */
+@media (max-width: 374px) {
+  .temporizador {
+    width: 56px;
+    height: 56px;
+  }
+  .numero {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablets (>= 768px) */
+@media (min-width: 768px) {
+  .temporizador {
+    width: 90px;
+    height: 90px;
+  }
+  .numero {
+    font-size: 1.85rem;
+  }
+  .fondo,
+  .progreso {
+    stroke-width: 8;
+  }
+}

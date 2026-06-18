@@ -103,3 +103,58 @@
   border: 1px solid rgba(255, 255, 255, 0.14);
 }
 .btn-reiniciar:hover { background: rgba(255, 255, 255, 0.12); }
+
+/* Teléfonos pequeños (< 375px) */
+@media (max-width: 374px) {
+  .trofeo {
+    font-size: 3.5rem;
+  }
+  .titulo {
+    font-size: 1.8rem;
+  }
+  .estadisticas {
+    gap: 1.25rem;
+    padding: 1.1rem 1.25rem;
+  }
+  .stat-numero {
+    font-size: 2rem;
+  }
+  .btn-otra-ronda,
+  .btn-reiniciar {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets (>= 768px) */
+@media (min-width: 768px) {
+  .contenido {
+    gap: 2.75rem;
+    padding: 3rem 2rem;
+  }
+  .trofeo {
+    font-size: 7rem;
+  }
+  .titulo {
+    font-size: 3.2rem;
+  }
+  .subtitulo {
+    font-size: 1.3rem;
+  }
+  .estadisticas {
+    gap: 3rem;
+    padding: 2rem 3rem;
+    border-radius: 28px;
+  }
+  .stat-numero {
+    font-size: 3.5rem;
+  }
+  .stat-label {
+    font-size: 0.85rem;
+  }
+  .btn-otra-ronda,
+  .btn-reiniciar {
+    padding: 1.1rem 2.75rem;
+    font-size: 1.2rem;
+  }
+}

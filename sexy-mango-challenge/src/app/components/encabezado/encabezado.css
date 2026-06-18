@@ -32,3 +32,39 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+/* Teléfonos pequeños (< 375px) */
+@media (max-width: 374px) {
+  .encabezado {
+    padding: 0.65rem 1rem;
+    gap: 0.5rem;
+  }
+  .logo {
+    width: 36px;
+    height: 36px;
+  }
+  .titulo-marca {
+    font-size: 0.95rem;
+  }
+  .titulo-sub {
+    font-size: 0.65rem;
+  }
+}
+
+/* Tablets (>= 768px) */
+@media (min-width: 768px) {
+  .encabezado {
+    padding: 1.1rem 2.5rem;
+    gap: 1rem;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .titulo-marca {
+    font-size: 1.35rem;
+  }
+  .titulo-sub {
+    font-size: 0.85rem;
+  }
+}

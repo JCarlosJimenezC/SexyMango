@@ -105,3 +105,42 @@
 .intensidad-suave  { background: rgba(182, 224, 0, 0.15); color: var(--color-acento); }
 .intensidad-picante { background: rgba(255, 123, 0, 0.15); color: var(--color-primario); }
 .intensidad-extremo { background: rgba(214, 40, 40, 0.15); color: #ff6b6b; }
+
+/* Teléfonos pequeños (< 375px) */
+@media (max-width: 374px) {
+  .carta-trasera {
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+  }
+  .tipo-badge {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .carta-texto {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+  .intensidad-badge {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.75rem;
+  }
+}
+
+/* Tablets (>= 768px) */
+@media (min-width: 768px) {
+  .carta-trasera {
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+  }
+  .tipo-badge {
+    font-size: 1.5rem;
+  }
+  .carta-texto {
+    font-size: 1.45rem;
+    line-height: 1.6;
+  }
+  .intensidad-badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 1.25rem;
+  }
+}

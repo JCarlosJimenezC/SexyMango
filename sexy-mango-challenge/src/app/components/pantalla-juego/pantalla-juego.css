@@ -158,3 +158,81 @@
   transition: color 0.2s;
 }
 .btn-salir:hover { color: rgba(255, 245, 230, 0.55); }
+
+/* Teléfonos pequeños (< 375px) */
+@media (max-width: 374px) {
+  .contenido {
+    padding: 0.75rem 0.75rem;
+    gap: 0.5rem;
+  }
+  .par-cartas {
+    gap: 0.5rem;
+  }
+  .carta-wrapper {
+    max-width: 160px;
+  }
+  .etiqueta-carta {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+  }
+  .instruccion {
+    font-size: 0.7rem;
+  }
+  .acciones {
+    padding: 0.75rem 0.75rem;
+    gap: 0.4rem;
+  }
+  .btn-accion {
+    font-size: 0.8rem;
+    padding: 0.75rem 0.3rem;
+    border-radius: 12px;
+  }
+  .barra-info {
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* Tablets (>= 768px) */
+@media (min-width: 768px) {
+  .contenido {
+    padding: 1.5rem 2.5rem;
+    gap: 1.25rem;
+  }
+  .par-cartas {
+    gap: 1.75rem;
+    max-width: 620px;
+  }
+  .par-cartas.una-sola {
+    max-width: 320px;
+  }
+  .carta-wrapper {
+    max-width: 280px;
+  }
+  .etiqueta-carta {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+  .instruccion {
+    font-size: 0.95rem;
+  }
+  .acciones {
+    padding: 1.25rem 2.5rem;
+    gap: 1rem;
+  }
+  .btn-accion {
+    font-size: 1.1rem;
+    padding: 1.1rem 1rem;
+    max-width: 200px;
+  }
+  .barra-info {
+    padding: 0.8rem 2.5rem;
+  }
+  .contador {
+    font-size: 1rem;
+  }
+  .btn-salir {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+}

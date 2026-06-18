@@ -102,3 +102,52 @@
   font-size: 0.75rem;
   color: rgba(255, 245, 230, 0.25);
 }
+
+/* Teléfonos pequeños (< 375px, iPhone SE, etc.) */
+@media (max-width: 374px) {
+  .contenido {
+    gap: 1.75rem;
+    padding: 1.25rem 1rem;
+  }
+  .logo-grande {
+    width: 100px;
+    height: 100px;
+  }
+  .subtitulo {
+    font-size: 1.8rem;
+  }
+  .descripcion {
+    font-size: 0.9rem;
+  }
+  .btn-comenzar {
+    font-size: 1.1rem;
+    padding: 0.95rem 1.5rem;
+  }
+}
+
+/* Tablets (>= 768px) */
+@media (min-width: 768px) {
+  .contenido {
+    gap: 3rem;
+    padding: 3rem 2rem;
+    max-width: 640px;
+  }
+  .logo-grande {
+    width: 180px;
+    height: 180px;
+  }
+  .subtitulo {
+    font-size: 3.2rem;
+  }
+  .descripcion {
+    font-size: 1.15rem;
+  }
+  .btn-comenzar {
+    max-width: 380px;
+    font-size: 1.45rem;
+    padding: 1.25rem 2rem;
+  }
+  .seccion-titulo {
+    font-size: 0.9rem;
+  }
+}
