@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Juego } from '../../services/juego';
+import { Audio } from '../../services/audio';
 import { Encabezado } from '../encabezado/encabezado';
 import { SelectorIntensidad } from '../selector-intensidad/selector-intensidad';
 
@@ -11,8 +12,10 @@ import { SelectorIntensidad } from '../selector-intensidad/selector-intensidad';
 })
 export class PantallaInicio implements OnInit {
   juego = inject(Juego);
+  private audio = inject(Audio);
 
   ngOnInit() {
     this.juego.cargarCartas();
+    this.audio.startBgMusic();
   }
 }

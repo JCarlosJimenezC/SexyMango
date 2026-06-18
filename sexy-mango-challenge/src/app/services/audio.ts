@@ -3,10 +3,42 @@ import { Injectable } from '@angular/core';
 @Injectable({ providedIn: 'root' })
 export class Audio {
   private ctx: AudioContext | null = null;
+  private bgSource: AudioBufferSourceNode | null = null;
+  private bgBuffer: AudioBuffer | null = null;
+  private bgGain: GainNode | null = null;
 
   private get context(): AudioContext {
     if (!this.ctx) this.ctx = new AudioContext();
     return this.ctx;
+  }
+
+  async startBgMusic() {
+    const ctx = this.context;
+    if (ctx.state === 'suspended') await ctx.resume();
+    if (!this.bgBuffer) {
+      const res = await fetch('audio/sexy-mango.mp3');
+      const buf = await res.arrayBuffer();
+      this.bgBuffer = await ctx.decodeAudioData(buf);
+    }
+    if (this.bgSource) return;
+    const src = ctx.createBufferSource();
+    src.buffer = this.bgBuffer;
+    src.loop = true;
+    const gain = ctx.createGain();
+    gain.gain.value = 0.35;
+    src.connect(gain);
+    gain.connect(ctx.destination);
+    src.start();
+    this.bgSource = src;
+    this.bgGain = gain;
+  }
+
+  stopBgMusic() {
+    if (this.bgSource) {
+      this.bgSource.stop();
+      this.bgSource = null;
+      this.bgGain = null;
+    }
   }
 
   playFlip() {
