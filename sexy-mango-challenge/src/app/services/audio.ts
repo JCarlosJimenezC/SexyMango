@@ -15,7 +15,7 @@ export class Audio {
   async startBgMusic() {
     const ctx = this.context;
     if (!this.bgBuffer) {
-      const res = await fetch('audio/sexy-mango.mp3');
+      const res = await fetch('audio/sexy-mango-audio.mp3');
       const buf = await res.arrayBuffer();
       this.bgBuffer = await ctx.decodeAudioData(buf);
     }
