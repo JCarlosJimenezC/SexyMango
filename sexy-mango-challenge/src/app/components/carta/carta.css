@@ -106,6 +106,26 @@
 .intensidad-picante { background: rgba(255, 123, 0, 0.15); color: var(--color-primario); }
 .intensidad-extremo { background: rgba(214, 40, 40, 0.15); color: #ff6b6b; }
 
+/* Teléfonos normales (375px – 767px) */
+@media (min-width: 375px) and (max-width: 767px) {
+  .carta-trasera {
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+  }
+  .tipo-badge {
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+  }
+  .carta-texto {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+  .intensidad-badge {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.75rem;
+  }
+}
+
 /* Teléfonos pequeños (< 375px) */
 @media (max-width: 374px) {
   .carta-trasera {
