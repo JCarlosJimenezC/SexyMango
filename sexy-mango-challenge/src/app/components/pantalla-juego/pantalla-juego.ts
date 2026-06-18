@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { Juego } from '../../services/juego';
 import { Audio } from '../../services/audio';
+import { Carta as CartaModel } from '../../models/carta.model';
 import { Carta } from '../carta/carta';
 import { Temporizador } from '../temporizador/temporizador';
 import { Encabezado } from '../encabezado/encabezado';
@@ -17,6 +18,10 @@ export class PantallaJuego {
 
   timerKey = signal(0);
 
+  onSeleccionar(carta: CartaModel) {
+    this.juego.seleccionarCarta(carta);
+  }
+
   onCumplido() {
     this.audio.playCumplido();
     this.onSiguiente();
@@ -29,10 +34,8 @@ export class PantallaJuego {
 
   onSiguiente() {
     this.timerKey.update(k => k + 1);
-    this.juego.sacarCarta();
+    this.juego.sacarPar();
   }
 
-  onTimerAgotado() {
-    // Sound already plays inside Temporizador; show visual feedback here if needed
-  }
+  onTimerAgotado() {}
 }

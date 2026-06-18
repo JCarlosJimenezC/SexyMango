@@ -1,5 +1,5 @@
 @if (carta()) {
-  <div class="carta-escena">
+  <div class="carta-escena" (click)="onClickCarta()" [class.es-seleccionable]="seleccionable()">
     <div class="carta-contenedor" [class.revelada]="revelada()">
       <div class="carta-lado carta-frente">
         <img src="img/Cartas.png" alt="Reverso de carta" class="carta-imagen" />

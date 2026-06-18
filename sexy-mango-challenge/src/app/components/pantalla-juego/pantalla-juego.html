@@ -21,20 +21,52 @@
   </div>
 
   <main class="contenido">
-    <app-carta [carta]="juego.cartaActual()" />
+    @if (!juego.cartaSeleccionada()) {
+      <p class="instruccion">Elige una carta</p>
+    }
+    <div class="par-cartas" [class.una-sola]="!juego.cartaVerdad() || !juego.cartaReto()">
+      @if (juego.cartaVerdad()) {
+        <div
+          class="carta-wrapper"
+          [class.desvanecida]="juego.cartaSeleccionada() && juego.cartaSeleccionada()!.categoria !== 'verdad'"
+        >
+          <p class="etiqueta-carta etiqueta-verdad">❓ Verdad</p>
+          <app-carta
+            [carta]="juego.cartaVerdad()"
+            [seleccionable]="!juego.cartaSeleccionada()"
+            (seleccionada)="onSeleccionar($event)"
+          />
+        </div>
+      }
+      @if (juego.cartaReto()) {
+        <div
+          class="carta-wrapper"
+          [class.desvanecida]="juego.cartaSeleccionada() && juego.cartaSeleccionada()!.categoria !== 'reto'"
+        >
+          <p class="etiqueta-carta etiqueta-reto">⚡ Reto</p>
+          <app-carta
+            [carta]="juego.cartaReto()"
+            [seleccionable]="!juego.cartaSeleccionada()"
+            (seleccionada)="onSeleccionar($event)"
+          />
+        </div>
+      }
+    </div>
   </main>
 
-  <div class="acciones">
-    <button class="btn-accion btn-paso" (click)="onPaso()">
-      ✋ Paso
-    </button>
-    <button class="btn-accion btn-siguiente" (click)="onSiguiente()">
-      🎴 Siguiente
-    </button>
-    <button class="btn-accion btn-cumplido" (click)="onCumplido()">
-      ✅ Cumplido
-    </button>
-  </div>
+  @if (juego.cartaSeleccionada()) {
+    <div class="acciones">
+      <button class="btn-accion btn-paso" (click)="onPaso()">
+        ✋ Paso
+      </button>
+      <button class="btn-accion btn-siguiente" (click)="onSiguiente()">
+        🎴 Siguiente
+      </button>
+      <button class="btn-accion btn-cumplido" (click)="onCumplido()">
+        ✅ Cumplido
+      </button>
+    </div>
+  }
 
   <button class="btn-salir" (click)="juego.reiniciar()">↩ Salir del juego</button>
 </div>

@@ -3,6 +3,15 @@
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
+  transition: transform 0.15s ease;
+}
+
+.carta-escena.es-seleccionable {
+  cursor: pointer;
+}
+
+.carta-escena.es-seleccionable:hover {
+  transform: translateY(-5px);
 }
 
 .carta-contenedor {
